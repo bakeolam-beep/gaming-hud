@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIGHTFALL // Action HUD</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>" />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div id="hud">
+    <!-- Crosshair -->
+    <div class="crosshair">
+      <div class="line line-h"></div>
+      <div class="line line-v"></div>
+      <div class="dot"></div>
+    </div>
+
+    <!-- Health & Shield (bottom left) -->
+    <div class="health-shield">
+      <div class="bar shield-bar">
+        <div class="fill shield-fill"></div>
+        <span class="label">SHIELD</span>
+      </div>
+      <div class="bar health-bar">
+        <div class="fill health-fill"></div>
+        <span class="label">HEALTH</span>
+      </div>
+    </div>
+
+    <!-- Ammo (bottom right) -->
+    <div class="ammo">
+      <div class="ammo-current">30</div>
+      <div class="ammo-reserve">/ 120</div>
+      <div class="ammo-icon">◈◈◈◈◈</div>
+    </div>
+
+    <!-- Minimap (bottom right, above ammo) -->
+    <div class="minimap">
+      <div class="map-circle">
+        <div class="ping"></div>
+        <div class="ping delay1"></div>
+        <div class="ping delay2"></div>
+        <div class="player-arrow"></div>
+      </div>
+    </div>
+
+    <!-- Top bar: score & timer -->
+    <div class="top-bar">
+      <div class="score">KILLS: 14 &nbsp; DEATHS: 3</div>
+      <div class="timer">04:32</div>
+    </div>
+
+    <!-- Kill feed (top right) -->
+    <div class="kill-feed">
+      <div class="feed-item">You 🔫 enemy_player</div>
+      <div class="feed-item">teammate ⚔️ enemy2</div>
+      <div class="feed-item">enemy3 💀 teammate</div>
+    </div>
+
+    <!-- REC indicator -->
+    <div class="rec">● REC</div>
+  </div>
+</body>
+</html>
